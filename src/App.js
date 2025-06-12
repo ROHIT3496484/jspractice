@@ -4,11 +4,12 @@ import Searchbarapi from './Searchbarwithapi.jsx/Searchbarapi'
 import "./App.css";
 import Pagination from './Pagination/Pagination';
 import Todoapp from './TodoApp/Todoapp';
+import Infinite from './Infinite Scroll/Infinite';
 
 const App = () => {
   return (
     <div className="App"> 
-      <Todoapp/>
+      <Infinite/>
     </div>
   )
 }
