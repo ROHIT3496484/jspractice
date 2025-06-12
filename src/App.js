@@ -1,10 +1,12 @@
 import React from 'react'
 import Searchbar from './Searchbar'
+import Searchbarapi from './Searchbarwithapi.jsx/Searchbarapi'
+import "./App.css";
 
 const App = () => {
   return (
-    <div>
-      <Searchbar/>
+    <div className="App"> 
+      <Searchbarapi/>
     </div>
   )
 }
