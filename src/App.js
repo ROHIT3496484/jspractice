@@ -6,11 +6,13 @@ import Pagination from './Pagination/Pagination';
 import Todoapp from './TodoApp/Todoapp';
 import Infinite from './Infinite Scroll/Infinite';
 import Listbar from './Todoapp1/Listbar';
+import Page from './Todoapp1/Page/Page';
+import AutoSearch from './Todoapp1/AutoSearch/AutoSearch';
 
 const App = () => {
   return (
     <div className="App"> 
-      <Listbar/>
+      <AutoSearch/>
     </div>
   )
 }
