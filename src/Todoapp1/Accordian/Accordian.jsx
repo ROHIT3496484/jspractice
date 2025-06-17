@@ -12,7 +12,7 @@ const Accordian = () => {
                     <div key={item.id} className="Questions">
                         <h3 >
                             {item.Question}
-                            <span onClick={() => setShow(show === item.id ? null : item.id)}>
+                            <span className="span" onClick={() => setShow(show === item.id ? null : item.id)}>
                                 {show === item.id ? "-" : "+"}
                             </span>
                              
