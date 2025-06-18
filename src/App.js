@@ -12,11 +12,22 @@ import AutoSearchwitapi from './Todoapp1/AutoSearch/AutoSearchwitapi';
 import Accordian from './Todoapp1/Accordian/Accordian';
 import Fileexplorer from './Todoapp1/File Explorer/Fileexplorer';
 import data from './Todoapp1/File Explorer/Fileexplorerdata.json'
+import  Accodian  from './Todoapp1/Accordian/Accodian';
+import Fileexpo from './Todoapp1/Accordian/FileExpo/Fileexpo';
 
 const App = () => {
+  const data = [{ "name": "A",
+    "type" : "folder",
+    "children":[{ "name": "B",
+    "type" : "folder",
+    "children":[{ "name": "c",
+    "type" : "file",
+  }]
+  }]
+  }]
   return (
     <div className="App"> 
-      <Infinite/>
+      <Fileexpo data = {data[0]}/>
     </div>
   )
 }

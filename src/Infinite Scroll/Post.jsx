@@ -26,7 +26,7 @@ const Post = ({val, setPageno}) => {
         val.map((item) => {
           return (
             <div key={item.id} className="post">
-              <img src={item.download_url} alt="post"  className="img" height={150}/>
+              <img src={item.download_url} alt="post"  className="img" height={500}/>
               
             </div>
           )
