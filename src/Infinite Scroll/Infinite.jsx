@@ -9,11 +9,7 @@ const Infinite = () => {
             const data = await fetch(`https://picsum.photos/v2/list?page=${pageno}&limit=3`);
             const res = await data.json();
             
-            setVal((prev) =>{
-              const all =[...prev, ...res];
-              const unique = Array.from(new Map(all.map((item)=>[item.id, item])).values());
-              return unique;
-            }); 
+            setVal((prev) =>[...prev, ...res]); 
         };
         fetchData();
     },[pageno]);

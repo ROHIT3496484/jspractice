@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Searchbar from './Searchbar'
 import Searchbarapi from './Searchbarwithapi.jsx/Searchbarapi'
 import "./App.css";
@@ -14,9 +14,11 @@ import Fileexplorer from './Todoapp1/File Explorer/Fileexplorer';
 import data from './Todoapp1/File Explorer/Fileexplorerdata.json'
 import  Accodian  from './Todoapp1/Accordian/Accodian';
 import Fileexpo from './Todoapp1/Accordian/FileExpo/Fileexpo';
+import Toast from './Toast Notification/Toast';
+import Proressbar from './Progressbar/Proressbar';
 
 const App = () => {
-  const data = [{ "name": "A",
+ /* const data = [{ "name": "A",
     "type" : "folder",
     "children":[{ "name": "B",
     "type" : "folder",
@@ -24,10 +26,12 @@ const App = () => {
     "type" : "file",
   }]
   }]
-  }]
+  }] */
+ const [show, setShow]  = useState(false);
   return (
     <div className="App"> 
-      <Fileexpo data = {data[0]}/>
+      {show?<Proressbar/>:""}
+      <button onClick={()=>setShow(!show)}>Toggle</button>
     </div>
   )
 }
