@@ -16,6 +16,7 @@ import  Accodian  from './Todoapp1/Accordian/Accodian';
 import Fileexpo from './Todoapp1/Accordian/FileExpo/Fileexpo';
 import Toast from './Toast Notification/Toast';
 import Proressbar from './Progressbar/Proressbar';
+import Progresshome from './Todoapp1/Progressbar1/Progresshome';
 
 const App = () => {
  /* const data = [{ "name": "A",
@@ -27,11 +28,13 @@ const App = () => {
   }]
   }]
   }] */
- const [show, setShow]  = useState(false);
+ //const [show, setShow]  = useState(false);
+  //{show?<Proressbar/>:""}
+ //<button onClick={()=>setShow(!show)}>Toggle</button>
   return (
     <div className="App"> 
-      {show?<Proressbar/>:""}
-      <button onClick={()=>setShow(!show)}>Toggle</button>
+    <Progresshome/>
+  
     </div>
   )
 }
