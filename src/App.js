@@ -17,6 +17,8 @@ import Fileexpo from './Todoapp1/Accordian/FileExpo/Fileexpo';
 import Toast from './Toast Notification/Toast';
 import Proressbar from './Progressbar/Proressbar';
 import Progresshome from './Todoapp1/Progressbar1/Progresshome';
+import FormikForm from './Realtimevalidation/FormikForm';
+import Searchapi from './Rewise/Searchapi';
 
 const App = () => {
  /* const data = [{ "name": "A",
@@ -33,7 +35,7 @@ const App = () => {
  //<button onClick={()=>setShow(!show)}>Toggle</button>
   return (
     <div className="App"> 
-    <Progresshome/>
+    <Searchapi/>
   
     </div>
   )
