@@ -19,6 +19,10 @@ import Proressbar from './Progressbar/Proressbar';
 import Progresshome from './Todoapp1/Progressbar1/Progresshome';
 import FormikForm from './Realtimevalidation/FormikForm';
 import Searchapi from './Rewise/Searchapi';
+import AutoSearchwo from './Rewise/AutoSearchwo';
+import Repagination from './Rewise/Repagination';
+import ReinfiniteScrolldata from './Rewise/ReinfiniteScrolldata';
+import Retodo from './Rewise/Retodo';
 
 const App = () => {
  /* const data = [{ "name": "A",
@@ -35,7 +39,7 @@ const App = () => {
  //<button onClick={()=>setShow(!show)}>Toggle</button>
   return (
     <div className="App"> 
-    <Searchapi/>
+    <Retodo/>
   
     </div>
   )
