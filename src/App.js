@@ -23,6 +23,14 @@ import AutoSearchwo from './Rewise/AutoSearchwo';
 import Repagination from './Rewise/Repagination';
 import ReinfiniteScrolldata from './Rewise/ReinfiniteScrolldata';
 import Retodo from './Rewise/Retodo';
+import Dropdownselect from './dropdownsekect/Dropdownselect';
+import FoodMenu from './Foodcart+addcart/Foodcart';
+import FoodMenumore from './Foodcart+addcart/FoodMenumore';
+import DebouncedSearch from './Live Dishes Search/DishesSearch';
+import Searchdishes from './Live Dishes Search/Searchdishes';
+import Searchwithapi from './Rewise/Searchwithapi';
+import Searchwithcondition from './Searchwith4button/Searchwithcondition';
+import Searchwithdropdown from './Searchwith4button/Searchwithdropdown';
 
 const App = () => {
  /* const data = [{ "name": "A",
@@ -39,7 +47,7 @@ const App = () => {
  //<button onClick={()=>setShow(!show)}>Toggle</button>
   return (
     <div className="App"> 
-    <Retodo/>
+    <Searchwithdropdown/>
   
     </div>
   )
