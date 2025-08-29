@@ -31,6 +31,13 @@ import Searchdishes from './Live Dishes Search/Searchdishes';
 import Searchwithapi from './Rewise/Searchwithapi';
 import Searchwithcondition from './Searchwith4button/Searchwithcondition';
 import Searchwithdropdown from './Searchwith4button/Searchwithdropdown';
+import Otp from './Todoapp1/OTP/Otp';
+import TrafficLights from './Trafficlight';
+import Handlesortapi from './Handlesortapi';
+import Handlesort from './Handlesort';
+import Dropdown from './Dropdown';
+import Loginpage from './Loginpage';
+import PolygonDrawingTool from './Polygon';
 
 const App = () => {
  /* const data = [{ "name": "A",
@@ -47,8 +54,7 @@ const App = () => {
  //<button onClick={()=>setShow(!show)}>Toggle</button>
   return (
     <div className="App"> 
-    <Searchwithdropdown/>
-  
+    <PolygonDrawingTool/>
     </div>
   )
 }
